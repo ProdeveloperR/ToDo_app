@@ -25,8 +25,8 @@ export default class App extends React.Component {
     // Initialize Firebase
     if (!firebase.apps.length) {
       firebase.initializeApp(firebaseConfig);
-      let firestore = firebase.firestore()
     }
+    console.log(firebase.auth())
   }
   render() {
     return (
